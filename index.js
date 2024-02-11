@@ -29,20 +29,68 @@ const nestedMuppet = {
 
 // 1. Use destructuring to assign appropriate variables based on the sounds animals make.
 
+const [moo,,,,] = farmAnimals.split(' ')
+const [,neigh,,,] = farmAnimals.split(' ')
+const [,,baa,,] = farmAnimals.split(' ')
+const [,,,oink,] = farmAnimals.split(' ')
+const [,,,,cluck] = farmAnimals.split(' ')
+
+
 // 2. Bolt the horse wandered off, so just give us four animals, and let's name them bessie, dolly, babe, and little.
+
+const [bessie,,,,]= farmAnimals.split(' ')
+const [,,dolly,,]= farmAnimals.split(' ')
+const [,,,babe,]= farmAnimals.split(' ')
+const [,,,,little]= farmAnimals.split(' ')
+
+
 
 // 3. Little the chicken had to go back to the coop, so now we're left with three. Let's use color variables of blackAndWhite, black, and pink.
 
+const [blackAndWhite,,,,]= farmAnimals.split(' ')
+const [,,black,,]= farmAnimals.split(' ')
+const [,,,pink,]= farmAnimals.split(' ')
+
+
 // Arrays
 
-// 4. Use destructuring to assign appropriate variables using the color names.
+// 4. Use destructuring to assign appropriate variables using the color name
+
+const red = colors[0]
+const orange = colors[1]
+const yellow = colors[2]
+const green = colors[3]
+const blue = colors[4]
+const indigo = colors[5]
+const violet = colors[6]
 
 // 5. Some people have a really hard time picking out indigo, so let's leave that one out, using the first letter of each color as the variable names.
 
+const r = colors[0]
+const o = colors[1]
+const y = colors[2]
+const g = colors[3]
+const b = colors[4]
+const v = colors[6]
+
 // 6. But wait! Indigo is now feeling *super* left out. Let's only assign indigo using indg. 
+
+const indg = colors[5]
 
 // Objects
 
 // 7. Use destructuring to assign all variables using the keys as the variable names
 
+
+const muppetName = muppet.muppetName
+const color = muppet.color
+const song = muppet.song
+const job = muppet.job
+const partner = muppet.partner
+
 // 8. Use destructuring to assign songs 2 and 4, and Kermit's job and partner
+
+const song2 = nestedMuppet.album.theMuppetMovie.song2
+const song4 = nestedMuppet.album.theMuppetMovie.song4
+const nestedJob = nestedMuppet.nestedJob
+const nestedPartner = nestedMuppet.nestedPartner
